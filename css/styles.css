@@ -314,6 +314,8 @@ svg {
     background-color: var(--blue);
 }
 
+/* = NEWSLETTER = */
+
 .footer-newsletter p {
     font-size: 14px;
     font-weight: 700;
@@ -321,40 +323,44 @@ svg {
     letter-spacing: 0.03em;
     text-align: left;
     margin-top: 12px;
+    margin-bottom: 20px;
 }
 
-.modal-form {
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.accept-rules {
-    display: flex;
-    justify-content: left;
-}
-
-.form h2 {
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.03em;
-}
-
-.form label {
-    font-family: 'Roboto';
-    font-style: normal;
+.footer-form {
+    color: var(--font-white);
+    background-color: var(--background-dark);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: var(--font-gray);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    outline: transparent;
+}
+
+.sign-up {
+    color: var(--font-white);
+    background-color: var(--blue);
+    width: 200px;
+    height: 50px;
+    padding: 10px 18px 10px 42px;
+    border-radius: 4px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    gap: 24px;
+}
+
+.sign-up svg {
+    fill: currentColor;
 }
 
 /* = Main Portfolio = */
@@ -759,4 +765,108 @@ svg {
     border-radius: 50%;
     cursor: pointer;
     align-items: baseline;
+}
+
+/* = Formularz = */
+
+.modal-form {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+}
+
+.form label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--font-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-part {
+    padding-bottom: 10px;
+}
+
+.form-icon {
+    fill: var(--font-black);
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+
+.form input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px 12px 11px 42px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form textarea {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    outline: none;
+}
+
+.form-rules {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.accept-rules {
+    display: flex;
+    justify-content: left;
+    width: 16px;
+    height: 15px;
+}
+
+.rules-link {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.send {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--font-white);
+    background-color: var(--blue);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
