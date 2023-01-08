@@ -571,6 +571,7 @@
                             name="email"
                             placeholder="E-mail"
                             class="footer-form"
+                            required
                         />
                         <button type="submit" class="sign-up">
                             Zapisz się
@@ -596,7 +597,7 @@
                     <form class="modal-form">
                         <div class="form-part">
                             <label> Imie </label>
-                            <svg width="12px" height="12px" class="form-icon">
+                            <svg width="18px" height="18px" class="form-icon">
                                 <use
                                     href="images/hw-06icons.svg#icon-name"
                                 ></use>
@@ -605,25 +606,41 @@
                                 type="text"
                                 name="name"
                                 placeholder="lolita"
+                                class="form-input"
+                                minlength="3"
+                                required
+                                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
                             />
                         </div>
                         <div class="form-part">
                             <label> Telefon</label>
-                            <svg width="13px" height="13px" class="form-icon">
+                            <svg width="18px" height="18px" class="form-icon">
                                 <use
                                     href="images/hw-06icons.svg#icon-phone"
                                 ></use>
                             </svg>
-                            <input type="number" name="telephone" />
+                            <input
+                                type="number"
+                                name="telephone"
+                                class="form-input"
+                                minlength="9"
+                                required
+                                pattern="[0-9\+\-]{9,15}"
+                            />
                         </div>
                         <div class="form-part">
                             <label>Email</label>
-                            <svg width="15px" height="12px" class="form-icon">
+                            <svg width="18px" height="18px" class="form-icon">
                                 <use
                                     href="images/hw-06icons.svg#icon-mail"
                                 ></use>
                             </svg>
-                            <input type="email" name="email" />
+                            <input
+                                type="email"
+                                name="email"
+                                class="form-input"
+                                required
+                            />
                         </div>
                         <div class="form-part">
                             <label>Komentarz</label>
@@ -639,9 +656,6 @@
                                 name="accept"
                                 class="accept-rules"
                             />
-                            <svg>
-                                <use href="images/check.svg#icon-check"></use>
-                            </svg>
                             <span form="form-rules">
                                 Oświadczam iż akceptuję
                                 <a href="#" class="rules-link">Regulamin</a>
@@ -651,7 +665,7 @@
                                 >
                             </span>
                         </div>
-                        <div>
+                        <div class="send-button">
                             <button type="submit" class="send">Wyślij</button>
                         </div>
                     </form>
