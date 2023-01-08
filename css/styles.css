@@ -322,6 +322,41 @@ svg {
     text-align: left;
     margin-top: 12px;
 }
+
+.modal-form {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accept-rules {
+    display: flex;
+    justify-content: left;
+}
+
+.form h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+}
+
+.form label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--font-gray);
+}
+
 /* = Main Portfolio = */
 
 /* = Guziki Kategori = */

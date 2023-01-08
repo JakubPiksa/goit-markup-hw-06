@@ -566,9 +566,15 @@
                 <div class="footer-newsletter">
                     <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
                     <form>
-                        <label> Email </label>
-                        <input type="email" name="email" />
-                        <button type="submit">Zapisz się</button>
+                        <input type="email" name="email" value="E-mail" />
+                        <button type="submit">
+                            Zapisz się
+                            <svg width="24px" height="24px">
+                                <use
+                                    href="images/hw-06icons.svg#icon-icon-send"
+                                ></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -580,6 +586,30 @@
                         <use href="images/cross.svg#cross"></use>
                     </svg>
                 </button>
+                <div class="form">
+                    <h2>Zostaw dane w formularzu poniżej</h2>
+                    <form class="modal-form">
+                        <label> Imie </label>
+                        <input type="text" name="name" placeholder="lolita" />
+                        <label> Telefon</label>
+                        <input type="number" name="telephone" />
+                        <label>Email</label>
+                        <input type="email" name="email" />
+                        <label>Komentarz</label>
+                        <textarea
+                            name="comment"
+                            placeholder="Wprowadź tekst"
+                        ></textarea>
+                        <input
+                            type="checkbox"
+                            name="accept"
+                            class="accept-rules"
+                        />Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                        <a href="#">Politykę Prywatności.</a>
+
+                        <button type="submit">Wyślij</button>
+                    </form>
+                </div>
             </div>
         </div>
         <script src="./modal.js"></script>
