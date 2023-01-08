@@ -314,6 +314,14 @@ svg {
     background-color: var(--blue);
 }
 
+.footer-newsletter p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 12px;
+}
 /* = Main Portfolio = */
 
 /* = Guziki Kategori = */
