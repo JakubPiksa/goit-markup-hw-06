@@ -327,6 +327,10 @@ svg {
 }
 
 .footer-form {
+    display: flex;
+}
+
+.footer-form-input {
     color: var(--font-white);
     background-color: var(--background-dark);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -346,9 +350,7 @@ svg {
 .sign-up {
     color: var(--font-white);
     background-color: var(--blue);
-    width: 200px;
-    height: 50px;
-    padding: 10px 18px 10px 42px;
+    padding: 10px 28px 10px 42px;
     border-radius: 4px;
     border: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -357,6 +359,7 @@ svg {
     line-height: 1.875;
     letter-spacing: 0.06em;
     gap: 24px;
+    display: flex;
 }
 
 .sign-up svg {
@@ -577,7 +580,7 @@ svg {
     gap: 30px;
 }
 
-/* = Texty na zdjęciach czym sie zajmujemy */
+/* = Texty na zdjęciaa czym sie zajmujemy */
 
 .picture-description {
     text-align: center;
@@ -805,9 +808,15 @@ svg {
     padding-bottom: 10px;
 }
 
+.form-input:is(:focus, :hover) {
+    outline: none;
+    border-color: var(--blue);
+}
+
 .form-icon {
-    fill: var(--font-black);
+    fill: currentColor;
     position: absolute;
+    margin-top: 10px;
     left: 54px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -836,6 +845,10 @@ svg {
     outline: none;
 }
 
+.form-part textarea:is(:hover, :focus) {
+    border-color: #2196f3;
+}
+
 .rules {
     display: flex;
 }
@@ -845,11 +858,14 @@ svg {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    color: var(--font-gray);
 }
 
 .accept-rules {
     display: flex;
     justify-content: left;
+    margin-left: 15px;
+    margin-right: 8px;
     width: 16px;
     height: 15px;
 }
@@ -863,6 +879,23 @@ svg {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+}
+
+.accept-rules:checked + .form-rules {
+    background-color: var(--blue);
+    outline: none;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.accept-rules:checked + .form-rules > .check-icon {
+    visibility: visible;
+}
+.check-icon {
+    visibility: hidden;
+    display: block;
+    fill: var(--font-white);
 }
 
 .send {
