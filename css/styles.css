@@ -808,11 +808,6 @@ svg {
     padding-bottom: 10px;
 }
 
-.form-input:is(:focus, :hover) {
-    outline: none;
-    border-color: var(--blue);
-}
-
 .form-icon {
     fill: currentColor;
     position: absolute;
@@ -843,10 +838,6 @@ svg {
     resize: none;
     padding: 12px 16px;
     outline: none;
-}
-
-.form-part textarea:is(:hover, :focus) {
-    border-color: #2196f3;
 }
 
 .rules {
@@ -881,17 +872,6 @@ svg {
     padding-top: 30px;
 }
 
-.accept-rules:checked + .form-rules {
-    background-color: var(--blue);
-    outline: none;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.accept-rules:checked + .form-rules > .check-icon {
-    visibility: visible;
-}
 .check-icon {
     visibility: hidden;
     display: block;
@@ -912,4 +892,15 @@ svg {
     cursor: pointer;
     text-align: center;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+
+/* = Hovery i Focusy = */
+
+.form-input:is(:focus, :hover) {
+    outline: none;
+    border-color: var(--blue);
+}
+
+.form-part textarea:is(:hover, :focus) {
+    border-color: #2196f3;
 }
