@@ -364,6 +364,7 @@ svg {
 
 .sign-up svg {
     fill: currentColor;
+    margin-top: 3px;
 }
 
 /* = Main Portfolio = */
