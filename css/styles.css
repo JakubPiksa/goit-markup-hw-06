@@ -915,26 +915,22 @@ svg {
 /* = Hovery i Focusy = */
 
 /* - form - */
-.form-input:is(:focus, :hover) {
+.form-input:focus {
     border-color: var(--blue);
     fill: var(--blue);
 }
 
-.form-part textarea:is(:hover, :focus) {
+.form-part textarea:focus {
     border-color: #2196f3;
-}
-
-.form-label:focus + .form-icon {
-    color: #2196f3;
-    fill: #2196f3;
 }
 
 .form-icon:hover {
     fill: #2196f3;
 }
 
-.form-input:hover + .form-icon {
+.form-input:focus + .form-icon {
     color: #2196f3;
+    fill: #2196f3;
 }
 
 /* - check - */
