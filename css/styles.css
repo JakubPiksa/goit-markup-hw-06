@@ -894,24 +894,27 @@ svg {
     position: absolute;
     width: 16px;
     height: 15px;
-    border: #000000 1px solid;
+    border: #000000 2px solid;
     left: 40px;
-    margin-top: 2px;
+    margin-top: 4px;
     border-radius: 3px;
 }
 
 .check-icon {
     position: absolute;
     opacity: 0;
-    left: -1px;
-    margin-top: -1px;
+    left: -2px;
+    margin-top: -2px;
+}
+
+.check-text {
+    margin-left: 4px;
 }
 
 /* = Hovery i Focusy = */
 
 /* - form - */
 .form-input:is(:focus, :hover) {
-    outline: none;
     border-color: var(--blue);
     fill: var(--blue);
 }
