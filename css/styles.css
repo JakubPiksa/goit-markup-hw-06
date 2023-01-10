@@ -909,6 +909,7 @@ svg {
 
 .check-text {
     margin-left: 4px;
+    color: var(--font-gray);
 }
 
 /* = Hovery i Focusy = */
