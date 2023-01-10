@@ -771,6 +771,7 @@ svg {
 }
 
 /* = Formularz = */
+/* - form - */
 
 .modal-form {
     padding-left: 40px;
@@ -791,7 +792,7 @@ svg {
     letter-spacing: 0.03em;
 }
 
-.form label {
+.form-label {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -840,42 +841,10 @@ svg {
     outline: none;
 }
 
-.rules {
-    display: flex;
-}
-
-.form-rules {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--font-gray);
-}
-
-.accept-rules {
-    display: flex;
-    justify-content: left;
-    margin-left: 15px;
-    margin-right: 8px;
-    width: 16px;
-    height: 15px;
-}
-
-.rules-link {
-    text-decoration: underline;
-    color: var(--blue);
-}
-
 .send-button {
     display: flex;
     justify-content: center;
     padding-top: 30px;
-}
-
-.check-icon {
-    visibility: hidden;
-    display: block;
-    fill: var(--font-white);
 }
 
 .send {
@@ -893,14 +862,79 @@ svg {
     text-align: center;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
+/* - check - */
+
+.rules-link {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.rules {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.form-rules {
+    border: 1px black solid;
+}
+
+.accept-rules {
+    justify-content: left;
+
+    width: 16px;
+    height: 15px;
+    opacity: 0;
+}
+
+.check-border {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border: #000000 1px solid;
+    left: 40px;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+
+.check-icon {
+    position: absolute;
+    opacity: 0;
+    left: -1px;
+    margin-top: -1px;
+}
 
 /* = Hovery i Focusy = */
 
+/* - form - */
 .form-input:is(:focus, :hover) {
     outline: none;
     border-color: var(--blue);
+    fill: var(--blue);
 }
 
 .form-part textarea:is(:hover, :focus) {
     border-color: #2196f3;
+}
+
+.form-label:focus + .form-icon {
+    color: #2196f3;
+    fill: #2196f3;
+}
+
+.form-icon:hover {
+    fill: #2196f3;
+}
+
+.form-input:hover + .form-icon {
+    color: #2196f3;
+}
+
+/* - check - */
+
+.accept-rules:checked + .check-border > .check-icon {
+    opacity: 1;
 }

@@ -596,14 +596,15 @@
                     <h2>Zostaw dane w formularzu poniżej</h2>
                     <form class="modal-form">
                         <div class="form-part">
-                            <label>Imie</label>
+                            <label class="form-label" for="name">Imie</label>
                             <svg width="18px" height="18px" class="form-icon">
                                 <use
-                                    href="images/hw-06icons.svg#icon-name"
+                                    href="images/hw-06.svg#icon-nameform"
                                 ></use>
                             </svg>
                             <input
                                 type="text"
+                                id="name"
                                 name="name"
                                 class="form-input"
                                 minlength="3"
@@ -612,14 +613,17 @@
                             />
                         </div>
                         <div class="form-part">
-                            <label> Telefon</label>
+                            <label class="form-label" for="phone">
+                                Telefon</label
+                            >
                             <svg width="18px" height="18px" class="form-icon">
                                 <use
-                                    href="images/hw-06icons.svg#icon-phone"
+                                    href="images/hw-06.svg#icon-phoneform"
                                 ></use>
                             </svg>
                             <input
                                 type="number"
+                                id="phone"
                                 name="telephone"
                                 class="form-input"
                                 minlength="9"
@@ -628,13 +632,14 @@
                             />
                         </div>
                         <div class="form-part">
-                            <label>Email</label>
+                            <label class="form-label" for="email">Email</label>
                             <svg width="18px" height="18px" class="form-icon">
                                 <use
-                                    href="images/hw-06icons.svg#icon-mail"
+                                    href="images/hw-06.svg#icon-emailform"
                                 ></use>
                             </svg>
                             <input
+                                id="email"
                                 type="email"
                                 name="email"
                                 class="form-input"
@@ -642,32 +647,41 @@
                             />
                         </div>
                         <div class="form-part">
-                            <label>Komentarz</label>
+                            <label class="form-label" for="text-area"
+                                >Komentarz</label
+                            >
                             <textarea
+                                id="text-area"
                                 name="comment"
                                 placeholder="Wprowadź tekst"
                             ></textarea>
                         </div>
 
                         <label class="rules">
-                            <input
-                                type="checkbox"
-                                name="accept"
-                                class="accept-rules"
-                            />
-                            <span form="form-rules">
-                                <svg class="check-icon" width="16" height="15">
-                                    <use
-                                        href="images/check.svg#icon-check"
-                                    ></use>
-                                </svg>
+                            <div form="form-rules">
+                                <input
+                                    type="checkbox"
+                                    name="accept"
+                                    class="accept-rules"
+                                />
+                                <span class="check-border">
+                                    <svg
+                                        class="check-icon"
+                                        width="16"
+                                        height="15"
+                                    >
+                                        <use
+                                            href="images/hw-06.svg#icon-check"
+                                        ></use>
+                                    </svg>
+                                </span>
                                 Oświadczam iż akceptuję
                                 <a href="#" class="rules-link">Regulamin</a>
                                 i
                                 <a href="#" class="rules-link"
                                     >Politykę Prywatności.</a
                                 >
-                            </span>
+                            </div>
                         </label>
                         <div class="send-button">
                             <button type="submit" class="send">Wyślij</button>
